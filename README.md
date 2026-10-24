@@ -19,11 +19,9 @@
 - [About](#-about)
 - [Topics Covered](#-topics-covered)
 - [Repository Structure](#-repository-structure)
-- [How Each Topic Is Organized](#-how-each-topic-is-organized)
-- [Getting Started](#-getting-started)
+- [How Each Topic Is Organized](#-how-each-topic-is-organized)<!-- [Getting Started](#-getting-started) -->
 - [Progress Tracker](#-progress-tracker)
-- [Recommended Resources](#-recommended-resources)
-- [Contributing](#-contributing)
+- [Recommended Resources](#-recommended-resources)<!-- [Contributing](#-contributing) -->
 - [Connect](#-connect)
 
 ---
@@ -132,7 +130,7 @@ For every important concept, I aim to include:
 | ⚠️ **Interview Notes** | Common mistakes, edge cases, and observations |
 
 ---
-
+<!--
 ## ⚙️ Getting Started
 
 **1. Clone the repository**
@@ -153,6 +151,7 @@ output.exe        # Windows
 > 💡 **Requirement:** A C++ compiler such as `g++` (GCC), Clang, or MSVC.
 
 ---
+-->
 
 ## 📈 Progress Tracker
 
@@ -160,7 +159,7 @@ output.exe        # Windows
 |---|-------|--------|
 | 01 | Basics | ✅ Completed |
 | 02 | Functions | ✅ Completed |
-| 03 | Binary Number System  ✅ Completed |
+| 03 | Binary Number System  | ✅ Completed |
 | 04 | Arrays | 🚧 In Progress |
 | 05 | Vectors | 🚧 In Progress
 | 05 | Strings | ⏳ Upcoming |
@@ -183,7 +182,7 @@ output.exe        # Windows
 - [cppreference](https://en.cppreference.com/) – C++ language and STL documentation
 
 ---
-
+<!--
 ## 🤝 Contributing
 
 Found a mistake or have a cleaner approach? Contributions are welcome!
@@ -194,14 +193,14 @@ Found a mistake or have a cleaner approach? Contributions are welcome!
 4. Push to your branch (`git push origin feature/your-topic`)
 5. Open a Pull Request
 
-You can also [open an issue](../../issues) for suggestions or corrections.
+You can also [open an issue](../../issues) for suggestions or corrections. -->
 
 ---
 
 ## 🌐 Connect
 
-- GitHub: [@your-username](https://github.com/twinkleQuest1110)
-- LinkedIn: [Your Name](https://linkedin.com/in/twinkle-029991343) 
+- GitHub: [@twinkleQuest1110](https://github.com/twinkleQuest1110)
+- LinkedIn: [click:)](https://linkedin.com/in/twinkle-029991343) 
 
 ---
 
