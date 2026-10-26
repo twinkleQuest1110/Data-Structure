@@ -32,11 +32,11 @@ This repository documents my **Data Structures and Algorithms (DSA) learning jou
 
 **My goals:**
 
-- 🧱 Build strong DSA fundamentals using C++
-- 🧠 Understand the logic instead of memorizing solutions
-- 💼 Prepare for coding interviews and placements
-- 📝 Maintain organized notes and code for quick revision
-- 🤝 Help fellow beginners learn DSA in a simple way
+- 🧱 Build strong DSA fundamentals using C++.
+- 🧠 Understand the logic instead of memorizing solutions.
+- 💼 Prepare for coding interviews and placements.
+- 📝 Maintain organized notes and code for quick revision.
+- 🤝 Help fellow beginners learn DSA in a simple way.
 
 ---
 
