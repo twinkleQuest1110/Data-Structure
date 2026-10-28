@@ -1,4 +1,4 @@
-<h1 align="center">🚀 DSA Basics with C++</h1>
+<h1 align="center">🚀DSA Basics with C++</h1>
 
 <p align="center">
   A beginner-friendly, Structured Journey through Data Structures & Algorithms using C++
@@ -160,7 +160,7 @@ output.exe        # Windows
 | 01 | Basics | ✅ Completed |
 | 02 | Functions | ✅ Completed |
 | 03 | Binary Number System  | ✅ Completed |
-| 04 | Arrays | 🚧 In Progress |
+| 04 | Arrays | ✅ In Progress |
 | 05 | Vectors | 🚧 In Progress
 | 05 | Strings | ⏳ Upcoming |
 | 06 | Searching & Sorting | ⏳ Upcoming |
