@@ -298,3 +298,89 @@ x + 1        -> row 1           (move 1 row)
 
 ---
 
+## 5. Passing a 2D Array to a Function
+
+Only the **first dimension** can be left out. The column count must always be written, because the compiler needs it to know how big one row is.
+
+### Way 1 - array syntax
+```cpp
+void fun1(int mat[][4], int n, int m) {
+    cout << "0th row address=" << mat     << endl;
+    cout << "1th row address=" << mat + 1 << endl;
+    cout << "2th row address=" << mat + 2 << endl;
+}
+```
+
+### Way 2 - pointer to a row
+```cpp
+void fun2(int (*mat)[4], int n, int m) {
+    cout << "0th row address=" << *mat << endl;   // *mat is int* -> address of mat[0][0]
+    cout << "row 1, col 2 val=" << *(*(mat + 1) + 2) << endl;   // 7
+    cout << "2th row address=" << mat + 2 << endl;
+}
+```
+
+Both ways are **exactly the same** to the compiler: `int mat[][4]` is silently converted to `int (*mat)[4]`.
+
+### Full program
+```cpp
+#include <iostream>
+using namespace std;
+
+void fun1(int mat[][4], int n, int m) {
+    // pass the row pointer - way 1
+    cout << "0th row address=" << mat     << endl;
+    cout << "1th row address=" << mat + 1 << endl;
+    cout << "2th row address=" << mat + 2 << endl;
+}
+
+void fun2(int (*mat)[4], int n, int m) {
+    // pass the row pointer - way 2
+    cout << "0th row address=" << *mat << endl;
+    // value of row 1, col 2  =>  *(*(ptr + i) + j)
+    cout << "row 1, col 2 val=" << *(*(mat + 1) + 2) << endl;
+    cout << "2th row address=" << mat + 2 << endl;
+}
+
+int main() {
+    int x[4][4] = {{1,  2,  3,  4},
+                   {5,  6,  7,  8},
+                   {9,  10, 11, 12},
+                   {13, 14, 15, 16}};
+
+    fun1(x, 4, 4);
+    fun2(x, 4, 4);
+    return 0;
+}
+```
+
+### Common mistakes
+| Mistake | Problem |
+|---------|---------|
+| `void f(int mat[][])` | Column size missing - compile error |
+| `void f(int *mat[4])` | This is an array of 4 **pointers**, not a pointer to a row |
+| `void f(int **mat)` | A normal `int x[4][4]` cannot be passed to `int**` |
+| Printing `*mat` and calling it a "value" | `*mat` is still a pointer (`int*`), so it prints an address. Dereference twice to get the value |
+
+---
+
+## 6. Quick Cheat Sheet
+
+| Topic | Remember |
+|-------|----------|
+| Diagonal sum | `m[i][i]` and `m[i][n-i-1]`, skip the centre once if `n` is odd |
+| Spiral | 4 boundaries `sr, er, sc, ec`, 4 loops per layer, `break` checks for single row/column |
+| Sorted matrix search | Start top-right, `key < cur` go left, `key > cur` go down, O(n + m) |
+| `x` | pointer to row 0 |
+| `x + 1` | next **row** |
+| `*x + 1` | next **element** in the same row |
+| `x[i][j]` | `*(*(x + i) + j)` |
+| Function parameter | `int mat[][C]` or `int (*mat)[C]`, column count is mandatory |
+
+### Practice Problems
+- Transpose of a matrix
+- Rotate a matrix by 90 degrees
+- Print the matrix in wave form
+- Search in a matrix using binary search (matrix where each row starts after the previous row ends)
+- Set matrix zeroes
+- Generate spiral matrix II (fill 1 to n*n in spiral order)
