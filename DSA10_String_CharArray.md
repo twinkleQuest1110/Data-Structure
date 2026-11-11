@@ -3,6 +3,12 @@
 ## Table of Contents
 1. [Character Arrays Basics](#1-character-arrays-basics)
 2. [Taking Input](#2-taking-input)
+3. [Convert to Uppercase](#3-convert-to-uppercase)
+4. [Palindrome Check](#4-palindrome-check)
+5. [Built-in Functions (`<cstring>`)](#5-built-in-functions-cstring)
+6. [Common Mistakes](#6-common-mistakes)
+7. [Quick Cheat Sheet](#7-quick-cheat-sheet)
+
 
 ---
 
