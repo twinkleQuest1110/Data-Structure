@@ -1,4 +1,4 @@
-# DSA09 - Matrix & Pointers in 2D Arrays
+# DSA09 - Matrix & Pointers in 2D Arrays.
 
 ## Table of Contents
 1. [Diagonal Sum](#1-diagonal-sum)
@@ -10,7 +10,7 @@
 
 ---
 
-## 1. Diagonal Sum
+## 1. Diagonal Sum.
 
 **Problem:** Find the sum of both diagonals of an `n x n` matrix. If `n` is odd, the centre element lies on both diagonals, so count it only once.
 
