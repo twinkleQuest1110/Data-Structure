@@ -1,4 +1,4 @@
-<h1 align="center">🚀DSA Basics with C++</h1>
+<h1 align="center">🚀.DSA Basics with C++.</h1>
 
 <p align="center">
   A beginner-friendly, Structured Journey through Data Structures & Algorithms using C++
